@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCA Pathfinder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#careers">Career Paths</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search...">
+          <button onclick="showSearchPage()">Search</button>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Search Results Page -->
+    <div id="searchPage" class="search-page" style="display: none;">
+      <button class="close-btn" onclick="closeSearchPage()">X</button> <!-- Close button -->
+      <h2>Search Results</h2>
+      <div class="content-section">
+          <div>
+              <span class="icon">🎓</span>
+              <p>Programs</p>
+          </div>
+          <div>
+              <span class="icon">🏆</span>
+              <p>Rankings</p>
+          </div>
+          <div>
+              <span class="icon">📅</span>
+              <p>Events</p>
+          </div>
+          <div>
+              <span class="icon">🏛️</span>
+              <p>Universities</p>
+          </div>
+          <div>
+              <span class="icon">📝</span>
+              <p>Articles</p>
+          </div>
+          <div>
+              <span class="icon">🎓</span>
+              <p>Admission Support</p>
+          </div>
+      </div>
+    </div>
+
+  <!-- Landing Section -->
+  <section id="home" class="landing">
+    <img class="main_image" src="AdobeStock_361989641.jpeg.webp" alt="image">
+    <h1>Welcome to MCA Pathfinder</h1>
+    <p>Your guide to a successful MCA journey.</p>
+    <button class="cta-btn">Explore Now</button>
+  </section>
+
+  <!-- Courses Section -->
+  <section  class="courses">
+    <h2>MCA Courses Overview</h2>
+    <div class="course-card">
+      <h3>Semester 1</h3>
+      <ul>
+      <li><b>C Programming:</b> Variables & constants, data types, operators, branching, looping, user-defined functions, dynamic memory, command-line arguments, file management, etc.</li>
+<li><b>Computer Organisation & Architecture:</b> Data representation, BCD-ASCII conversion, digital machine structure, truth tables, logic gates, digital components, internal components(RAM, ROM, etc), CPU architecture, etc. </li>
+<li><b>Advanced Mathematics:</b> Sets, mapping, logic, and relation, permutation & combinations, functions, graph theory, algorithms, finite automata, and fuzzy sets.</li> 
+<li><b>Business, Accounting, and Communication Basics:</b> Bookkeeping, debit & credit, revenue, income, principles of management, accounting policies, taxing, report writing, technical writing, business communication, and project documentation.</li>
+</ul>    
+</div>
+    <div class="course-card">
+      <h3>Semester 2</h3>
+      <ul>
+        <li><b>Data Structures in C Programming:</b>  Time-space trade-off, array-row/column, stack, queue, tree, threaded tree, binary search tree, sorting, recursion technique, hashing, and pattern matching algorithms. </li>
+  <li><b>Data Communication & Computer Networks:</b> Topology, baseband & broadband, guided & unguided media, data and signal bits, multiplexing, digital to analogue, transmission methods, error detection methods, data security etc.
+  </li>
+  <li><b>Database Management Systems I:</b> DBMS introduction, data dictionary, three-level architecture, network model, relational model, database design, storage structure, etc.</li> 
+  <li><b>Information Systems Analysis:</b>  Design-logical & physical, program design, risk, and feasibility analysis, information requirement analysis, data modelling, input/output control, and project management. </li>
+  </ul> 
+    </div>
+    <div class="course-card">
+      <h3>Semester 3</h3>
+      <ul>
+        <li><b>Operating Systems:</b> OS introduction, types of OS, scheduling algorithms, resource manager, performance evaluation, security, protection, etc.
+          <li><b>Intelligent Systems:</b> AI intro, heuristic search techniques, knowledge representation, weak and strong slots, natural language processing, etc.
+          </li>
+          <li><b>Statistical Analysis: </b>central tendency measure, dispersion, probability, interpolation, integration, systems of linear equations, inverse interpolation, etc.
+          </li>
+          <li><b>Unix and Shell Programming: </b>UNIX OS overview, shell commands and programming, file system and handling ordinary files, I-Node, TCP/IP network, etc.</li>
+        </li>
+      </ul>
+    </div>
+    <div class="course-card">
+      <h3>Semester 4</h3>
+      <ul>
+        <li><b>Database Management Systems II:</b> Normalization theory, database design, multivalued dependencies, constraints and assertions, database security, transaction planning, recovery management, and lock base protocols. </li>
+<li><b>Introduction to Software Engineering:</b> Software lifecycles, models, structured system design, cost estimation, data-oriented analysis, software testing, etc.</li>
+<li><b>Operational Research Techniques:</b>b> Linear programming, network optimization models, dynamic programming, game theory, queuing theory, inventory control, etc.</li>
+<li><b>Multimedia and Graphics:</b> Graphic devices, graphic operations, clipping, Roberts algorithm, Warnock algorithm, rendering, shadowing, and multimedia design. </li>
+      </ul>
+    </div>
+    <div class="course-card">
+      <h3>Semester 5</h3>
+      <p>While the MCA Syllabus of semester V mandates studying an elective subject, the sixth semester involves completing an Industrial Project on a topic of the student’s choice. Some of the major electives offered in this semester are System Administration and Linux, Windows Programming, e-commerce, object-oriented programming with Java, Compiler Design, Advanced Unix Programming, Image Processing, Parallel Programming, and E-Commerce.</p>
+    </div>
+    <div class="course-card">
+      <h3>Semester 6</h3>
+      <p>While the MCA Syllabus of semester V mandates studying an elective subject, the sixth semester involves completing an Industrial Project on a topic of the student’s choice. Some of the major electives offered in this semester are System Administration and Linux, Windows Programming, e-commerce, object-oriented programming with Java, Compiler Design, Advanced Unix Programming, Image Processing, Parallel Programming, and E-Commerce.</p>
+    </div>
+    
+  </section>
+
+  <!-- Career Pathways Section -->
+  <section id="careers" class="careers">
+    <h2>Career Pathways after MCA</h2>
+    <div class="career-card">
+      <h3>Software Developer</h3>
+      <p>Develop, test, and maintain software applications...</p>
+    </div>
+    <div class="career-card">
+      <h3>Data Scientist</h3>
+      <p>Analyze complex data sets and build predictive models...</p>
+    </div>
+    <!-- Add more career cards -->
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="resources">
+    <h2>Study Resources</h2>
+    <p>Access study materials, books, and tutorials to help you succeed.</p>
+    <button class="cta-btn">Download Resources</button>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h2>Student Testimonials</h2>
+    <p>If you're looking to explore career options after an MCA, our alumni have shared their experiences to guide you.</p>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <p>“Boy from mountains, I'm a passionate MCA student at the University of Kashmir North Campus. Crafting immersive user experiences through clean and elegant code.”</p>
+            <div class="testimonial-info">
+                <img src="WhatsApp Image 2024-10-16 at 15.54.02_91d17522.jpg" alt="Chetan Kumar">
+                <h4>Chetan Kumar</h4>
+                <p>Front End Developer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <p>“I am currently pursuing my Master of Computer Applications (MCA) at Kashmir University. Experience in both front-end and back-end technologies.”</p>
+            <div class="testimonial-info">
+                <img src="WhatsApp Image 2024-10-16 at 15.49.54_e0e87793.jpg" alt="Anubhav Kumar">
+                <h4>Anubhav Kumar</h4>
+                <p>Back End Developer</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit" class="cta-btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section univer-*sities">
+        <h4>Popular Universities</h4>
+        <div class="university-list">
+          <ul>
+            <li>Jawaharlal Nehru University</li>
+            <li>Christ University</li>
+            <li>NIT Trichy</li>
+            <li>TEZPUR University</li>
+            <li>ANNA University</li>
+          </ul>
+          <ul>
+            <li>DTU</li>
+            <li>NIT Jalandhar</li>
+            <li>PUCHD</li>
+            <li>University of Hyderabad</li>
+            <li>JAYPEE University</li>
+          </ul>
+          <ul>
+            <li>DOON University</li>
+            <li>NIT Jamshedpur</li>
+            <li>TNOU</li>
+            <li>University of Mysore</li>
+            <li>VIDYASAGAR University</li>
+          </ul>
+          <ul>
+            <li>FMS Delhi</li>
+            <li>NIT Raipur</li>
+            <li>TNAU</li>
+            <li>Lovely Professional University</li>
+            <li>VMOU</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <p>&copy; 2024 MCA Pathfinder. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="script.js"></script>
+  <script>
+    function showSearchPage() {
+        document.getElementById('searchPage').style.display = 'block';
+    }
+</script>
+</body>
+</html>

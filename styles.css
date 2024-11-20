@@ -1,0 +1,511 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Navigation Bar */
+header nav {
+  background-color: #041014;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Space between links */
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #3498db; /* Light blue on hover */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-container input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-container button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .search-container input[type="text"] {
+    width: 80%;
+  }
+}
+
+/* Landing Section */
+/* Landing Section */
+.landing {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.landing .main_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  z-index: -1; /* Sends the image behind the text */
+  margin-top: 0;
+}
+
+.landing h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.landing p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.cta-btn {
+  background-color: #218321;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #c0392b;
+}
+
+
+/* Section Styling */
+/* General Section Styling */
+section {
+  padding: 4rem 2rem;
+  
+}
+
+/* Section Title */
+h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Course Card Styling */
+.course-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #3498db; /* Add a colored accent to the left of each card */
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Semester Header */
+.course-card h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid #3498db; /* Add a line to separate the semester header */
+  padding-bottom: 0.5rem;
+}
+
+/* Course Content Styling */
+.course-card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.course-card ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.course-card ul li b {
+  color: #3498db; /* Color for bolded text */
+}
+
+/* Adjustments for paragraphs in Semester 5 and 6 */
+.course-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* Subtle hover effect for course cards */
+.course-card:hover {
+  border-left-color: #2980b9; /* Darken the accent color on hover */
+  cursor: pointer;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .course-card {
+    padding: 1.5rem;
+  }
+
+  .course-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .course-card ul li {
+    font-size: 0.95rem;
+  }
+
+  .course-card p {
+    font-size: 0.95rem;
+  }
+}
+
+ .career-card, .testimonial-card {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+ .career-card:hover, .testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #3498db;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+/* Footer Styling */
+footer {
+  background-color: #041014;
+  color: #ffffff;
+  padding: 2rem 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.university-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.university-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.university-list li {
+  margin-bottom: 0.5rem;
+  color: #b0b0b0;
+}
+
+hr {
+  border-top: 1px solid #333;
+  margin: 1.5rem 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #b0b0b0;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom p {
+  color: #b0b0b0;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .university-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing h1 {
+    font-size: 3rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding: 0.5rem 0;
+  }
+}
+/* Add styling for search page and close button */
+.search-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.close-btn:hover {
+  background-color: #c0392b;
+}
+.main_image{
+  margin-top: 100px;
+}
+/* Testimonial Section Styling */
+/* Testimonial Section Styling */
+.testimonials {
+  background-color: #f8f9fc;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials p {
+  color: #6c757d;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial-info h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #34495e;
+  margin: 0;
+}
+
+.testimonial-info p {
+  color: #888888;
+  margin: 0.5rem 0 1rem;
+  font-size: 0.9rem;
+}
+
+.social-icons a {
+  color: #0073b1;
+  margin: 0 0.3rem;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: #005582;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+}
